@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var inputYear = prompt("Please enter the testing year", '');
+
+        if (isLeapYear(inputYear)) {
+            alert(inputYear + " is a leap year")
+        }else{
+            alert(inputYear + " is not a leap year ")
+        }
+function isLeapYear(year){
+            if (year % 400 === 0){
+                return true
+            }else if (year % 100 === 0){
+                return false
+            }else if (year % 4 === 0){
+                return true
+            }else{
+                return false
+            }
+        }
+
+    </script>
+</body>
+</html>
